@@ -1,12 +1,10 @@
 package com.altimetrik.demo.model;
 
-import java.util.List;
-
-public class Artist {
+public class Artist2 {
 
 	private String name;
 	private String mbid;
-	List<Image> image;
+	Image image;
 	private String listeners;
 	public String getName() {
 		return name;
@@ -20,10 +18,11 @@ public class Artist {
 	public void setMbid(String mbid) {
 		this.mbid = mbid;
 	}
-	public List<Image> getImage() {
+	
+	public Image getImage() {
 		return image;
 	}
-	public void setImage(List<Image> image) {
+	public void setImage(Image image) {
 		this.image = image;
 	}
 	public String getListeners() {
