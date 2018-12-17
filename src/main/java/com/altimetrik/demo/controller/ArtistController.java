@@ -14,6 +14,7 @@ public class ArtistController {
 	@Autowired
 	ArtistService artistService;
 	
+	//Sample Url: http://localhost:8080/artist?name=Radiohead&country=vanuatu
 	@GetMapping("/artist")
 	public ArtistInfo getArtistInfo(@RequestParam("name") String name, @RequestParam("country") String country) {
 		return artistService.getTopArtist(name,country);

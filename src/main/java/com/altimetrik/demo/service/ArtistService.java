@@ -44,7 +44,7 @@ public class ArtistService {
 		MessageInfo getArtistId = getArtistId(name);
 		if(name.equals(getArtistId.getMessage().getBody().getArtist_list().get(0).getArtist().getArtist_name())) {
 			artist_id=getArtistId.getMessage().getBody().getArtist_list().get(0).getArtist().getArtist_id();
-			MessageInfo getAlbumid=getAlbumId(artist_id,topalbum.getName());
+//			MessageInfo getAlbumid=getAlbumId(artist_id,topalbum.getName());
 		}
 		MessageInfo getAlbumid=getAlbumId(artist_id,topalbum.getName());
 		String albumId=getAlbumid.getMessage().getBody().getAlbum_list().get(0).getAlbum().getAlbum_id();
